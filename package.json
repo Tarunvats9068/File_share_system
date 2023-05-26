@@ -24,7 +24,6 @@
   },
   "scripts": {
     "start": "node server-side/server.js",
-    "build" : "npm install && npm run build",
     "fronted": "react-scripts start",
     "eject": "react-scripts eject",
     "client": "yarn start",
