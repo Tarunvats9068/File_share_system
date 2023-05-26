@@ -2,9 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose"); 
 const cors = require("cors");
 const path = require("path"); 
-const db = require('./config/mongoose');
+const db = require('./server-side/config/mongoose');
 const passport = require('passport');
-const JWT = require('./config/jwt-passport')
+const JWT = require('./server-side/config/jwt-passport')
 require("dotenv").config();
 const app = express();
 app.use(cors());
