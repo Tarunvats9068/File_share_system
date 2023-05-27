@@ -82,8 +82,7 @@ router.get("/:id", (req, res) => {
                 if (err) {
                     res.status(400).json(`Error: ${err}`);
                 } else {
-                    res.status(200).json({msg:"successfully",
-                                         data:file});
+                    res.send(data);
                 }
             });
         })
