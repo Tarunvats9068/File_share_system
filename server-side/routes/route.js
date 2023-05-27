@@ -82,7 +82,7 @@ router.get("/:id", (req, res) => {
                 if (err) {
                     res.status(400).json(`Error: ${err}`);
                 } else {
-                    res.json({ file, data });
+                    res.download(data);
                 }
             });
         })
